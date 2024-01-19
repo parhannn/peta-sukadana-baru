@@ -1,0 +1,24 @@
+.spinner-wrapper {
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.spinner-wrapper.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.spinner-grow {
+  height: 60px;
+  width: 60px;
+}
